@@ -2,19 +2,26 @@
 
 # v3.2
 
-> v3.2 is still in development. Alpha releases will be made available. The intention is to synchronize the release of math.gl 3.2 with deck.gl v8.2.
+> Note that v3.2 is still in development. Alpha releases may be available.
 
 Target Release Date: TBD
 
-### Typescript Type Definitions
+### Typescript Support
 
 Typescript type definitions (`.d.ts` files) are now provided for all math.gl modules.
+
+### `@math.gl/polygon`
+
+Polygon math (area, winding, clipping, cutting) provided as a new sub-module.
 
 # v3.1
 
 Date: Dec 16, 2019
 
-- `viewport-mercator-project` has been added to math.gl a new sub-module.
+### `@math.gl/web-mercator`
+
+- WebMercator projection support is now available through the new `@math.gl/web-mercator` npm sub-module.
+- This new module is an evolution of the [`viewport-mercator-project`](https://github.com/uber-archive/viewport-mercator-project) repository.
 
 ## v3.0
 
