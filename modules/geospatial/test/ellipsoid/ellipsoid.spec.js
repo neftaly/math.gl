@@ -169,6 +169,7 @@ test('Ellipsoid#cartesianToCartographic works with an Object result parameter', 
   const result = {x: 0, y: 0, z: 0};
   // @ts-ignore
   const returnedResult = Ellipsoid.WGS84.cartesianToCartographic(surfaceCartesian, result);
+  // @ts-ignore
   t.ok(result === returnedResult);
   tapeEqualsEpsilon(t, returnedResult.x, surfaceCartographic.x, _MathUtils.EPSILON8);
   tapeEqualsEpsilon(t, returnedResult.y, surfaceCartographic.y, _MathUtils.EPSILON8);
@@ -180,9 +181,13 @@ test('Ellipsoid#cartesianToCartographic works with a Cartesian result parameter'
   const result = {longitude: 0, latitude: 0, height: 0};
   // @ts-ignore
   const returnedResult = Ellipsoid.WGS84.cartesianToCartographic(surfaceCartesian, result);
+  // @ts-ignore
   t.ok(result === returnedResult);
+  // @ts-ignore
   tapeEqualsEpsilon(t, returnedResult.longitude, surfaceCartographic.x, _MathUtils.EPSILON8);
+  // @ts-ignore
   tapeEqualsEpsilon(t, returnedResult.latitude, surfaceCartographic.y, _MathUtils.EPSILON8);
+  // @ts-ignore
   tapeEqualsEpsilon(t, returnedResult.height, surfaceCartographic.z, _MathUtils.EPSILON8);
   t.end();
 });
